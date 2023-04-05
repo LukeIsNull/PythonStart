@@ -41,6 +41,7 @@ from fileIO.serialize import testSerialize
 # From Thread folder
 from Thread.multiProcess import testMultiProcess
 from Thread.multiThread import testMultiThread
+from Thread.threadLocal import testThreadLocal
 
 def main():
     # ListGenerator()
@@ -80,7 +81,8 @@ def main():
     # testSerialize()
 
     # testMultiProcess()
-    testMultiThread()
+    # testMultiThread()
+    testThreadLocal()
 
 if __name__ == '__main__':
     main()
