@@ -42,6 +42,9 @@ from fileIO.serialize import testSerialize
 from Thread.multiProcess import testMultiProcess
 from Thread.multiThread import testMultiThread
 from Thread.threadLocal import testThreadLocal
+# From toolModule folder
+from toolModule.dateTime import testDateTime
+from toolModule.namedTuple import testNamedTuple
 
 def main():
     # ListGenerator()
@@ -82,7 +85,10 @@ def main():
 
     # testMultiProcess()
     # testMultiThread()
-    testThreadLocal()
+    # testThreadLocal()
+
+    # testDateTime()
+    testNamedTuple()
 
 if __name__ == '__main__':
     main()
