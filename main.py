@@ -2,6 +2,7 @@
 #coding:utf-8
 
 import sys
+import argparse
 
 from pathlib import Path
 
@@ -45,8 +46,20 @@ from Thread.threadLocal import testThreadLocal
 # From toolModule folder
 from toolModule.dateTime import testDateTime
 from toolModule.namedTuple import testNamedTuple
+from toolModule.bases64 import testBase64
 
 def main():
+    parser = argparse.ArgumentParser(
+        prog = 'Main',
+        description = 'Python learning code',
+        epilog = 'Copyright(r), 2023'
+    )
+
+    parser.add_argument('-m', default = 'ListGenerator', type = str)
+    args = parser.parse_args()
+
+    print(f'-- TestingModule: {args.m}')
+
     # ListGenerator()
     # Generator()
     # Iterator()
@@ -88,7 +101,8 @@ def main():
     # testThreadLocal()
 
     # testDateTime()
-    testNamedTuple()
+    # testNamedTuple()
+    testBase64()
 
 if __name__ == '__main__':
     main()
