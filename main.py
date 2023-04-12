@@ -47,6 +47,8 @@ from Thread.threadLocal import testThreadLocal
 from toolModule.dateTime import testDateTime
 from toolModule.namedTuple import testNamedTuple
 from toolModule.bases64 import testBase64
+# From vendor folder
+from vendor.Psutil import testPsutil
 
 def main():
     parser = argparse.ArgumentParser(
@@ -102,7 +104,9 @@ def main():
 
     # testDateTime()
     # testNamedTuple()
-    testBase64()
+    # testBase64()
+
+    testPsutil()
 
 if __name__ == '__main__':
     main()
