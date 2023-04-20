@@ -50,6 +50,7 @@ from toolModule.bases64 import testBase64
 # From vendor folder
 from vendor.Psutil import testPsutil
 from vendor.charDet import testChardet
+from vendor.requests import testRequests
 
 def main():
     parser = argparse.ArgumentParser(
@@ -108,7 +109,8 @@ def main():
     # testBase64()
 
     # testPsutil()
-    testChardet()
+    # testChardet()
+    # testRequests()
 
 if __name__ == '__main__':
     main()
