@@ -51,6 +51,8 @@ from toolModule.bases64 import testBase64
 from vendor.Psutil import testPsutil
 from vendor.charDet import testChardet
 from vendor.requests import testRequests
+# From web folder
+from web.socketClient import testSocketClient
 
 def main():
     parser = argparse.ArgumentParser(
@@ -111,6 +113,8 @@ def main():
     # testPsutil()
     # testChardet()
     # testRequests()
+
+    testSocketClient()
 
 if __name__ == '__main__':
     main()
