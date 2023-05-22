@@ -53,6 +53,8 @@ from vendor.charDet import testChardet
 from vendor.requests import testRequests
 # From web folder
 from web.socketClient import testSocketClient
+# From benchmark folder
+from benchmark.MapBenchmark import mapBenchmark
 
 def main():
     parser = argparse.ArgumentParser(
@@ -114,7 +116,9 @@ def main():
     # testChardet()
     # testRequests()
 
-    testSocketClient()
+    # testSocketClient()
+
+    mapBenchmark()
 
 if __name__ == '__main__':
     main()
